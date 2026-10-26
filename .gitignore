@@ -1,0 +1,18 @@
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# JavaScript dependencies and build files
+node_modules/
+dist/
+
+# Secret environment files
+.env.*
+!.env.example
+
+# Editor files
+.vscode/
+.DS_Store
