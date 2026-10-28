@@ -23,9 +23,7 @@ type Section =
   | "AI Insights"
   | "Settings"
   | "Help Center";
-
-const API_URL = "http://127.0.0.1:8000/tickets";
-
+const API_URL = "https://supportiq-backend-q1ca.onrender.com/tickets";
 const menuItems: { name: Section; icon: string }[] = [
   { name: "Overview", icon: "⌂" },
   { name: "Tickets", icon: "▣" },

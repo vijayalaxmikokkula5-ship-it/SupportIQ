@@ -71,7 +71,7 @@ function goToPage(newPage: Page) {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/submit-ticket',
+      'https://supportiq-backend-q1ca.onrender.com/submit-ticket',
         {
           method: 'POST',
           body: formData,
