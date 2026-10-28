@@ -90,7 +90,7 @@ function Dashboard() {
     } catch (err) {
       console.error(err);
       setError(
-        "Unable to load tickets. Please check your internet connection or try refreshing."
+"Unable to load tickets. Please check the backend connection and try again."
       );
     } finally {
       setLoading(false);
