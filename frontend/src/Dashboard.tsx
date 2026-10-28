@@ -90,7 +90,7 @@ function Dashboard() {
     } catch (err) {
       console.error(err);
       setError(
-        "Unable to load tickets. Check that your backend is running at http://127.0.0.1:8000."
+        "Unable to load tickets. Please check your internet connection or try refreshing."
       );
     } finally {
       setLoading(false);
@@ -134,11 +134,6 @@ function Dashboard() {
   useEffect(() => {
     void loadTickets();
   }, [loadTickets]);
-
-  useEffect(() => {
-    void loadTickets();
-  }, [loadTickets]);
-
   const total = tickets.length;
   const high = tickets.filter(
     (t) => t.priority?.toLowerCase() === "high"
