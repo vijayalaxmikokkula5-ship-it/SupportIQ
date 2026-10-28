@@ -10,8 +10,6 @@ app = FastAPI(
     description="Advanced AI-powered customer support ticket analysis platform",
     version="3.0.0"
 )
-
-
 # =========================
 # CORS
 # =========================
@@ -21,13 +19,12 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
+        "https://supportiq-frontend-9wid.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
 # =========================
 # DATABASE
 # =========================
